@@ -1,23 +1,25 @@
 import { useState } from "react";
-import labImage1 from "../assets/images/labImage1.png" 
-import labImage2 from "../assets/images/labImage2.png"
-import labImage3 from "../assets/images/labImage3.png"
-import labImage4 from "../assets/images/labImage4.png"
+import img1 from "../assets/images/bunStacked.jpg";
+import img2 from "../assets/images/tentABanner.jpg";
+import img3 from "../assets/images/blindPeople.jpg";
+import img4 from "../assets/images/nearDrum.jpg";
+import img5 from "../assets/images/givingBun.jpg";
+import img6 from "../assets/images/rice2020.png";
 
 export default function Gallery() {
   // Example slides (replace with your real 10 images + descriptions)
   const slides = [
-    { img: labImage1, text: "Helping hands reach farther together." },
-    { img: labImage2, text: "Our members working in the community." },
-    { img: labImage3, text: "Food distribution drive." },
-    { img: labImage4, text: "Charity walkathon event." },
-    { img: labImage1, text: "Volunteers teaching children." },
-    { img: labImage2, text: "Blood donation campaign." },
-    { img: labImage3, text: "Support for local families." },
-    { img: labImage4, text: "Medical aid contribution." },
-    { img: labImage1, text: "Fundraising concert." },
-    { img: labImage2, text: "Together, we make change possible." },
-  ];
+    { img: img1, text: "Helping hands reach farther together." },
+    { img: img2, text: "Our members working in the community." },
+    { img: img3, text: "Food distribution drive." },
+    { img: img4, text: "Charity walkathon event." },
+    { img: img5, text: "Volunteers teaching children." },
+    { img: img6, text: "Blood donation campaign." },
+    { img: img2, text: "Support for local families." },
+    { img: img1, text: "Medical aid contribution." },
+    { img: img3, text: "Fundraising concert." },
+    { img: img4, text: "Together, we make change possible." },
+  ]
 
   const [current, setCurrent] = useState(0);
 
@@ -30,7 +32,7 @@ export default function Gallery() {
   };
 
   return (
-    <div className="max-w-4xl mx-auto py-8 px-4 text-center">
+    <div className="max-w-4xl mx-auto py-8 px-4 text-center pt-20">
       <h1 className="text-3xl font-bold text-red-600 mb-6">
         Welcome to the Gallery
       </h1>

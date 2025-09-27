@@ -6,21 +6,21 @@ export default function Header() {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
-    <nav className="bg-red-500 text-white shadow-md">
+    <nav className="bg-red-400/90 text-white shadow-md fixed top-0 left-0 w-full z-50 backdrop-blur-sm">
       <div className="max-w-7xl mx-auto px-4">
-        <div className="flex justify-between items-center h-16">
+        <div className="flex justify-between items-center h-20">
           
           {/* Brand Name */}
-          <Link to="/" className="text-2xl font-bold">
+          <Link to="/" className="text-3xl font-bold">
             Charity Association
           </Link>
 
           {/* Desktop Links */}
           <div className="hidden md:flex space-x-6">
-            <Link to="/" className="hover:text-blue-200">Home</Link>
-            <Link to="/members" className="hover:text-blue-200">Members</Link>
-            <Link to="/contribution" className="hover:text-blue-200">Contribution</Link>
-            <Link to="/gallery" className="hover:text-blue-200">Gallery</Link>
+            <Link to="/" className="font-bold hover:text-blue-200">Home</Link>
+            <Link to="/members" className="font-bold hover:text-blue-200">Members</Link>
+            <Link to="/contribution" className="font-bold hover:text-blue-200">Contribution</Link>
+            <Link to="/gallery" className="font-bold hover:text-blue-200">Gallery</Link>
           </div>
 
           {/* Mobile Menu Button */}
